@@ -1,0 +1,547 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </script>
+    </script>
+    <style>
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <title>Central Skill Exchange</title>
+  </head>
+  <body>
+    
+    <header class="border sticky top-0 bg-[url('pict/bg3.jpg')] shadow z-50">
+        <nav class="text-black w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+            <a href="" class="text-3xl flex font-bold lg:text-4xl lg:ml-5"><img src="pict/logo50.png" class="pr-5 w-14 h-9"/>セントラル技能交流協同組合</a>
+            <ul class="hidden text-black sm:text-sm md:flex lg:text-xl">
+                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#services">サービス</a></li>
+                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#job">職種</a></li>
+                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#about">組合概要</a></li>
+                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#about">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="fixed top-3 right-6 inline-block md:hidden" id="dropdownContainer">
+          <!-- Hamburger Button -->
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label for="menu-toggle" class="border cursor-pointer block p-2 bg-white rounded-md text-black">
+            <!-- Hamburger Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+
+          <!-- Menu (Reveal to the left)  -->
+          <ul id="dropdownMenu" class="hidden peer-checked:block absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md overflow-hidden">
+            <li class="p-5 bg-white text-2xl rounded-xl hover:bg-blue-50 "><a href="#services">サービス</a></li>
+            <li class="p-5 bg-white text-2xl rounded-xl hover:bg-blue-50 "><a href="#job">職種</a></li>
+            <li class="p-5 bg-white text-2xl rounded-xl hover:bg-blue-50 "><a href="#about">組合概要</a></li>
+            <li class="p-5 bg-white text-2xl rounded-xl hover:bg-blue-50 "><a href="#about">お問い合わせ</a></li>
+          </ul>
+        </div>
+    </header>
+    <!-- main page -->
+    <section id="main" class="pt-20 mt-20 border bg-[url('pict/bg3.jpg')]">
+      <div class="container h-60 mx-auto w-3/4 bg-[url('pict/bannercrop.jpg')] bg-contain bg-center sm:bg-cover rounded-t-3xl md:h-80 lg:h-96"></div>
+      <div class="mx-auto text-center flex items-center">
+        <h3 id="typewriter-main" class="bg-white rounded-r-xl text-5xl font-bold text-center p-3 -mt-20 mb-10 sm:mt-3 sm:w-full sm:bg-[url('pict/bg3.jpg')]"></h3>
+      </div>
+      <div class="container mx-auto text-center flex items-center sm:pb-10">
+        <div class="mx-auto p-5 w-full">
+          <p class="text-gray-800 text-xl mb-5 bg-white rounded-xl text-left p-3 sm:text-lg sm:mb-3 sm:p-3 md:text-xl md:mb-7 md:p-4 lg:text-2xl lg:mb-9 lg:p-5">
+            日本国内では少子高齢化が進行し、労働力不足が深刻な問題となっています。これに対する解決策の一つとして、外国人労働者の活用が注目されています。
+          </p>
+          <p class="text-gray-800 text-xl mb-5 bg-white rounded-xl text-left p-3 sm:text-lg sm:mb-3 sm:p-3 md:text-xl md:mb-7 md:p-4 lg:text-2xl lg:mb-9 lg:p-5">
+            日本国内では少子高齢化が進行し、労働力不足が深刻な問題となっています。これに対する解決策の一つとして、外国人労働者の活用が注目されています。
+          </p>
+          <button class="border font-bold shadow-xl border-sky-400 text-black px-10 py-5 rounded-xl hover:bg-sky-400 hover:text-white sm:text-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+            <a href="#about" class="flex">組合概要を見る
+            <span class="relative flex size-3">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+            </span> 
+            </a></button>
+        </div>
+      </div>
+    </section>
+    <!-- description -->
+    <section id="description" class="pt-40 min-h-screen border bg-[url('pict/bg3.jpg')] sm:pt-20 sm:mt-10">
+      <div class="container mx-auto pb-10">
+        <h3 class="text-3xl font-bold text-center sm:text-5xl reveal">外国人技能実習制度とは</h3>
+        <h3 class="text-3xl font-bold text-center sm:text-5xl sm:mt-5 reveal">What is Technical Intern Training Program?</h3>
+        <p class="text-xl m-5 p-5 bg-white text-gray-800 text-left rounded-xl lg:text-2xl">
+          技能実習制度とは、国際協力の一環として、開発途上国などの外国人に対して、日本で一定期間（最長5年間）にわたり、企業等でOJTを通じて技能を習得・移転する制度です。
+        </p>
+        <div class="p-5">
+          <table class="border table-auto text-xl mx-auto">
+            <thead>
+              <tr class="border bg-blue-300">
+                <th class="border p-5 px-20 lg:px-30">在留資格</th>
+                <th class="border p-5 sm:px-30">技能実習 1号</th>
+                <th class="border p-5 sm:px-30">技能実習 2号</th>
+                <th class="border p-5 sm:px-30">技能実習 3号</th>
+              </tr>
+            </thead>
+            <tbody class="border">
+              <tr class="border">
+                <td class="border p-5 bg-blue-100 font-bold">在留資格期間</td>
+                <td class="border p-5 text-center">１年</td>
+                <td class="border p-5 text-center">２年</td>
+                <td class="border p-5 text-center">２年</td>
+              </tr>
+              <tr class="border">
+                <td class="border p-5 bg-blue-100 font-bold">技能のレベル</td>
+                <td class="border p-5 text-center">なし</td>
+                <td class="border p-5 text-center">技能実習１号試験</td>
+                <td class="p-5 text-center">技能実習２号試験</td>
+              </tr>
+              <tr class="border">
+                <td class="border p-5 bg-blue-100 font-bold">日本語能力</td>
+                <td class="border p-5 text-center">なし</td>
+                <td class="border p-5 text-center">なし</td>
+                <td class="p-5 text-center">なし</td>
+              </tr>
+              <tr class="border">
+                <td class="border p-5 bg-blue-100 font-bold">家族の帯同</td>
+                <td class="border p-5 text-center">不可</td>
+                <td class="border p-5 text-center">不可</td>
+                <td class="p-5 text-center">不可</td>
+              </tr>
+              <tr class="border">
+                <td class="border p-5 bg-blue-100 font-bold">組合支援</td>
+                <td class="border p-5 text-center">対象</td>
+                <td class="border p-5 text-center">対象</td>
+                <td class="p-5 text-center">対象</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center">※OJT = On the Job Training</p>
+      </div>
+      
+    </section>
+    <!-- service -->
+    <section id="services" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center sm:text-5xl reveal">サービス紹介</h3>
+        <h3 class="text-3xl font-bold text-center sm:text-5xl sm:mt-5 reveal">Services</h3>
+        <p class="text-xl text-center m-5 p-5 bg-white text-gray-800 rounded-xl mb-5 lg:text-2xl">
+          私たちが提案するサービスはこちらです。
+        </p>
+        <div class="grid p-5 gap-8 lg:grid-cols-2">
+          <!-- service 1 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start" >
+            <img src="pict/jimu daiko 100.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">各種申請資料の事務代行</h4>
+                <ul class="text-gray-500 mb-5 list-disc px-5">
+                  <li>在留資格申請・認定申請・資格変更申請･期間変更申請・実習計画認定申請等</li>
+                  <li>各種申請手数料の代行納付</li>
+                </ul>
+            </div>
+          </div>
+          <!-- service 2 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/sougei.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">入国/帰国時の送迎及び航空券の手配</h4>
+                <ul class="text-gray-500 mb-5 list-disc px-5">
+                  <li>入国/帰国時は最寄りの空港まで送迎サポート</li>
+                  <li>入国/帰国時の航空券を手配します</li>
+                </ul>
+            </div>
+          </div>
+          <!-- service 3 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/nyukokukenshu.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">入国後研修の実施(約1ヶ月)</h4>
+                <ul class="text-gray-500 mb-5 list-disc px-5">
+                  <li>日本語教育(読解･聴解･会話など)および、専門用語等の教育</li>
+                  <li>日本における生活習慣教育(挨拶･マナー･交通ルール･防災訓練等)</li>
+                  <li>就業に係る教育(時間管理･報連相･5S等)</li>
+                </ul>
+            </div>
+          </div>
+          <!-- service 4 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/shiyakusho 100.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">各市町村への転入･転出の届出および国保加入等の支援</h4>
+                <ul class="text-gray-500 mb-5 list-disc px-5">
+                  <li>各役所窓口での手続き</li>
+                </ul>
+            </div>
+          </div>
+          <!-- service 5 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/ginko koza 100.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">銀行口座開設や送金手続き等の支援</h4>
+              <p class="text-gray-500 mb-5">実習生の銀行口座開設や、母国への送金手続き等をサポート</p>
+            </div>
+          </div>
+          <!-- service 6 -->
+          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/mendan 100.png"/>
+            <div>
+              <h4 class="text-2xl font-bold mb-5">定期的な訪問指導･面談ならびに通訳･翻訳</h4>
+              <ul class="text-gray-500 mb-5 list-disc px-5">
+                <li>実習生の生活、職場環境の確認等のため適宜巡回し訪問指導を実施</li>
+                <li>訪問指導は月1回を基本とし、必要時は適宜対応</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- job -->
+    <section id="job" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl reveal">対応職種</h3>
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl sm:mt-5 reveal">Job</h3>
+      <p class="text-gray-500 mb-5 text-center">弊社が対応している職種はこちら</p>
+      <div class="container p-10 mx-auto">
+        <!-- job 1 -->
+        <div class="shadow-xl">
+            <div class="flex justify-center">
+              <img src="pict/seibishi300.png" class="pr-5 rounded-xl"/>
+              <img src="pict/seibishi3 300.png" class="rounded-r-xl"/>
+            </div>
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold text-3xl mt-5 mb-5">整備士 (Automobile Mechanic)</h4>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- country -->
+    <section id="country" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl reveal">対応国籍</h3>
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl sm:mt-5 reveal">Support Country</h3>
+      <p class="text-gray-500 mb-5 text-center">弊社が対応している国はこちら</p>
+      <div class="container p-10 mx-auto flex justify-center">
+        <!-- country 1 -->
+        <div class="shadow-xl">
+            <div class="flex justify-center">
+              <img src="pict/filippineflag.jpg" class="pr-5 rounded-xl"/>
+            </div>
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold text-3xl mt-5 mb-5">フィリピン</h4>
+            </div>
+        </div>
+        <!-- country 2 -->
+        <div class="shadow-xl">
+            <div class="flex justify-center">
+              <img src="pict/indonesiaflag.jpg" class="pr-5 rounded-xl"/>
+            </div>
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold text-3xl mt-5 mb-5">インドネシア</h4>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- sending organization -->
+    <section id="so" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl reveal">送り出し機関</h3>
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl sm:mt-5 reveal">Sending Organization</h3>
+      <p class="text-gray-500 mb-5 text-center">弊社と契約結んでいる送り出し機関はこちら</p>
+      <div class="container relative p-10 mx-auto flex justify-center overflow-hidden">
+        <!-- Picture -->
+        <div id="slider" class="shadow-xl flex transition-transform duration-1000">
+              <img src="pict/PEA.jpg" class="h-full flex-shrink-0"/>
+              <img src="pict/sakura2.jpg" class="h-full flex-shrink-0"/>
+        </div>
+        <button id="prevBtn" onclick="prevSlide()"
+          class="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-gray-700 hover:bg-blue-500 hover:text-white transition p-3 rounded-full shadow-lg z-10">
+          <!-- Panah kiri -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="nextBtn" onclick="nextSlide()"
+          class="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-gray-700 hover:bg-blue-500 hover:text-white transition p-3 rounded-full shadow-lg z-10">
+          <!-- Panah kanan -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <div class="py-3 px-5">
+        <h4 class="text-center font-bold text-3xl mt-5 mb-5">Prudential Employment Agency, Inc</h4>
+      </div>
+    </section>
+    <!-- education institution  -->
+    <section id="education" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl reveal">教育機関</h3>
+      <h3 class="text-3xl font-bold text-center mb-5 sm:text-5xl sm:mt-5 reveal">Education Institution</h3>
+      <p class="text-gray-500 mb-5 text-center">弊社と契約結んでいる教育機関はこちら</p>
+      <div class="container relative p-10 mx-auto flex justify-center overflow-hidden">
+        <!-- Picture -->
+        <div id="slider2" class="shadow-xl flex transition-transform duration-1000">
+              <img src="pict/sakura1.jpg"  class="w-full flex-shrink-0"/>
+              <img src="pict/sakura3.jpg"  class="w-full flex-shrink-0"/>
+              <img src="pict/seibi1.jpg"  class="w-full flex-shrink-0"/>
+              <img src="pict/seibi2.jpg"  class="w-full flex-shrink-0"/>
+              <img src="pict/seibi4.jpg"  class="w-full flex-shrink-0"/>
+              <img src="pict/seibi5.jpg"  class="w-full flex-shrink-0"/>
+        </div>
+        <button id="prevBtn2" onclick="prevSlide2()"
+          class="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-gray-700 hover:bg-blue-500 hover:text-white transition p-3 rounded-full shadow-lg z-10">
+          <!-- Panah kiri -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="nextBtn2" onclick="nextSlide2()"
+          class="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-gray-700 hover:bg-blue-500 hover:text-white transition p-3 rounded-full shadow-lg z-10">
+          <!-- Panah kanan -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <div class="py-3 px-5">
+        <h4 class="text-center font-bold text-3xl mt-5 mb-5">Sakura Japanese Language School</h4>
+      </div>
+    </section>
+     <!-- about -->
+    <section id="about" class="pt-40 border bg-[url('pict/bg3.jpg')] sm:pt-20">
+      <h3 class="text-3xl font-bold text-center sm:text-5xl reveal">組合概要</h3>
+      <h3 class="text-3xl font-bold text-center sm:text-5xl sm:mt-5 reveal">About</h3>
+          <div class="p-5">
+					 <table class="mx-auto text-left mb-10 bg-white rounded-xl">
+						<tr>
+							<th class="pl-10 pt-10 p-3 w-80 lg:w-100 lg:text-4xl">名称</th>
+							<td class="pr-10 pt-10 p-3 lg:text-4xl">セントラル技能交流協同組合</td>
+						</tr>
+						<tr>
+							<th class="pl-10 p-3 lg:text-4xl">許可</th>
+							<td class="p-3 pr-10 lg:text-4xl">監理団体許可番号 許2406000009(特定監理事業)</td>
+						</tr>
+						<tr>
+							<th class="pl-10 p-3 lg:text-4xl"><b>本店</b><br>
+                  <b>監理事務所</b>
+              </th>
+							<td class="p-3 lg:text-4xl">愛知県名古屋市中区金山1-14-9 長谷川ビル9F<br>
+                  岐阜県石切町３７　二葉工業所３階
+              </td>
+						</tr>
+						<tr>
+							<th class="pl-10 p-3 lg:text-4xl">TEL/FAX</th>
+							<td class="p-3 lg:text-4xl font-bold text-red-600">058-273-5580 / 058-273-5585</td>
+						</tr>
+						<tr>
+							<th class="pl-10 p-3 lg:text-4xl">設立</th>
+							<td class="p-3 lg:text-4xl">令和2年1月</td>
+						</tr>
+						<tr>
+							<th class="pl-10 p-3 lg:text-4xl">資本金</th>
+							<td class="p-3 lg:text-4xl">5,050,000円</td>
+						</tr>
+						<tr>
+							<th class="pl-10 pb-10 p-3 lg:text-4xl">代表理事</th>
+							<td class="pb-10 p-3 lg:text-4xl">岩村　彰憲</td>
+						</tr>
+					 </table>
+          </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="pt-10 border bg-[url('pict/bg3.jpg')] sm:pt-20 sm:pb-20">
+      <div class="text-center">
+        <h3 class="text-3xl font-bold sm:text-5xl">セントラル技能交流協同組合</h3>
+        <h3 class="text-2xl font-bold sm:text-5xl sm:mt-5">Central Technical Skill Exchange Cooperative</h3>
+        <p class="text-2xl m-5" ></p>
+        <p class="text-2xl m-5"><b>本店</b>：〒460-0022 愛知県名古屋市中区金山1-14-9　長谷川ビル9F</p>
+        <p class="text-2xl m-5"><b>監理事務所</b>：〒500-8437 岐阜県石切町３７　二葉工業所３階</p>
+        <P class="text-2xl m-5 font-bold text-red-500">TEL 058-273-5580 / FAX:058-273-5585</P>
+      </div>
+    </section>
+    
+    <!-- Arrow to the top -->
+    <button 
+      id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-6 right-6 border bg-white text-black p-3 rounded-full shadow-lg hover:bg-gray-300 transition duration-300"
+      aria-label="Scroll to the top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+    <!-- Typing effect -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Typewriter effect
+        const words = ["未来を運ぶ", "Carrying The Future"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+
+        function type() {
+          currentWord = words[i];
+          const element = document.getElementById("typewriter-main");
+
+          if (!element) return;
+
+          if (isDeleting) {
+            element.textContent = currentWord.substring(0, j - 1);
+            j--;
+            if (j === 1) {
+              isDeleting = false;
+              i++;
+              if (i === words.length) i = 0;
+            }
+          } else {
+            element.textContent = currentWord.substring(0, j + 1);
+            j++;
+            if (j === currentWord.length + 1) {
+              isDeleting = true;
+            }
+          }
+          setTimeout(type, 300);
+        }
+        type();
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+        reveals.forEach((el) => observer.observe(el));
+      });
+    </script>
+    <!-- close dropdown -->
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('dropdownMenu');
+      const container = document.getElementById('dropdownContainer');
+
+      // Toggle show/hide menu berdasarkan checkbox
+      toggle.addEventListener('change', () => {
+        menu.classList.toggle('hidden', !toggle.checked);
+      });
+
+      // Klik di luar = tutup menu
+      document.addEventListener('click', (e) => {
+        if (!container.contains(e.target)) {
+          toggle.checked = false;
+          menu.classList.add('hidden');
+        }
+      });
+    </script>
+    <!-- Hide Arrow when on the Top -->
+    <script>
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          scrollTopBtn.classList.remove('hidden');
+        } else {
+          scrollTopBtn.classList.add('hidden');
+        }
+      });
+    </script>
+    <!-- Image Slider 1-->
+    <script>
+      const slider = document.getElementById('slider');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const totalSlides = slider.children.length;
+
+      let index = 0;
+
+      function updateSlide() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        // Tampilkan/sembunyikan tombol sesuai posisi
+        prevBtn.classList.toggle('hidden', index === 0);
+        nextBtn.classList.toggle('hidden', index === totalSlides - 1);
+      }
+
+      function nextSlide() {
+      index = (index + 1) % slider.children.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slider.children.length) % slider.children.length;
+      updateSlide();
+    }
+      // Opsional: auto-slide setiap 10 detik
+      setInterval(nextSlide, 5000);
+      updateSlide();
+    </script>
+    <!-- Image Slider 2-->
+    <script>
+      const slider2 = document.getElementById('slider2');
+      const prevBtn2 = document.getElementById('prevBtn2');
+      const nextBtn2 = document.getElementById('nextBtn2');
+      const totalSlides2 = slider2.children.length;
+
+      let index2 = 0;
+
+      function updateSlide2() {
+        slider2.style.transform = `translateX(-${index2 * 100}%)`;
+        // Tampilkan/sembunyikan tombol sesuai posisi
+        prevBtn2.classList.toggle('hidden', index2 === 0);
+        nextBtn2.classList.toggle('hidden', index2 === totalSlides2 - 1);
+      }
+
+      function nextSlide2() {
+          index2 = (index2 + 1) % slider2.children.length;
+          updateSlide2();
+      }
+
+      function prevSlide2() {
+          index2 = (index2 - 1 + slider2.children.length) % slider2.children.length;
+          updateSlide2();
+      }
+      // Opsional: auto-slide setiap 10 detik
+      setInterval(nextSlide2, 5000);
+      updateSlide2();
+    </script>
+
+  </body>
+</html>
+
+<!-- <div class="container mx-auto p-5 sm:text-3xl">
+  <ul class="flex space-x-5">
+    <li>
+      <a href=""><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+    </li>
+    <li>
+      <a href=""><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+    </li>
+    <li>
+      <a href=""><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+    </li>
+    <li>
+      <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+    </li>
+  </ul>
+</div>

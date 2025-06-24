@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </script>
+  </script>
+  <title>お問い合わせ</title>
+</head>
+<body class="bg-gray-100">
+  <header class="border sticky top-0 bg-white shadow z-50">
+      <nav class="text-black w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+          <a href="index.html" class="text-3xl flex font-bold lg:text-4xl lg:ml-5"><img src="pict/logo50.png" class="pr-5 w-14 h-9"/>セントラル技能交流協同組合</a>
+      </nav>
+  </header>
+  <section>
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-md">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">お問い合わせ</h1>
+        <p class="text-gray-600 mb-8">
+          ご質問やご不明な点がございましたら、以下のフォームよりお気軽にご連絡ください。
+        </p>
+
+        <form
+          action="https://formsubmit.co/widianto.gilang@gmail.com"
+          method="POST"
+          class="space-y-6"
+        >
+          <!-- Anti-bot & pengaturan -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://centralexchangeskill.github.io/success.html"  />
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">お名前</label>
+            <input
+              type="text"
+              name="name"
+              required
+              class="mt-1 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">メールアドレス</label>
+            <input
+              type="email"
+              name="email"
+              required
+              class="mt-1 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">件名</label>
+            <input
+              type="text"
+              name="subject"
+              class="mt-1 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">メッセージ</label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              class="mt-1 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition"
+          >
+            送信する
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -21,15 +21,15 @@
     </style>
     <title>Central Skill Exchange</title>
   </head>
-  <body>
-    <header class="border sticky top-0 bg-[url('pict/bg3.jpg')] shadow z-50">
-        <nav class="text-black w-11/12 md:container mx-auto py-4 flex justify-between items-center">
-            <a href="" class="text-3xl flex font-bold lg:text-4xl lg:ml-5"><img src="pict/logo50.png" class="pr-5 w-14 h-9"/>セントラル技能交流協同組合</a>
-            <ul class="hidden text-black sm:text-sm md:flex lg:text-xl">
-                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#services">サービス</a></li>
-                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#job">職種</a></li>
-                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="#about">組合概要</a></li>
-                <li class="px-4 py-1 hover:text-black md:hover:text-lg lg:hover:text-4xl hover:font-bold"><a href="contact.html">お問い合わせ</a></li>
+  <body class="w-full">
+    <header class="border sticky top-0 bg-white shadow z-20">
+        <nav class="w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+            <a href="" class="text-xl sm:text-3xl flex font-bold lg:text-4xl lg:ml-5 items-center"><img src="pict/logo50.png" class="pr-3 w-10 h-8 sm:pr-5 sm:w-14 sm:h-9"/>セントラル技能交流協同組合</a>
+            <ul class="hidden text-sm md:flex lg:text-xl">
+                <li class="px-4 py-1 hover:text-blue-600 hover:font-bold"><a href="#services">サービス</a></li>
+                <li class="px-4 py-1 hover:text-blue-600 hover:font-bold"><a href="#job">職種</a></li>
+                <li class="px-4 py-1 hover:text-blue-600 hover:font-bold"><a href="#about">組合概要</a></li>
+                <li class="px-4 py-1 hover:text-blue-600 hover:font-bold"><a href="contact.html">お問い合わせ</a></li>
             </ul>
         </nav>
         <div class="fixed top-3 right-6 inline-block md:hidden" id="dropdownContainer">
@@ -57,11 +57,11 @@
     <section id="main" class="pt-20 mt-20 border bg-[url('pict/bg3.jpg')]">
       <div class="container h-60 mx-auto w-3/4 bg-[url('pict/bannercrop.jpg')] bg-contain bg-center sm:bg-cover rounded-t-3xl md:h-80 lg:h-96"></div>
       <div class="mx-auto text-center flex items-center">
-        <h3 id="typewriter-main" class="bg-white rounded-r-xl text-5xl font-bold text-center p-3 -mt-20 mb-10 sm:mt-3 sm:w-full sm:bg-[url('pict/bg3.jpg')]"></h3>
+        <h3 id="typewriter-main" class="bg-white rounded-r-xl text-3xl sm:text-5xl font-bold text-center p-3 -mt-20 mb-10 sm:mt-3 sm:w-full sm:bg-[url('pict/bg3.jpg')]"></h3>
       </div>
       <div class="container mx-auto text-center flex items-center sm:pb-10">
         <div class="mx-auto p-5 w-full">
-          <p class="text-gray-800 text-xl mb-5 bg-white rounded-xl text-left p-3 sm:text-lg sm:mb-3 sm:p-3 md:text-xl md:mb-7 md:p-4 lg:text-2xl lg:mb-9 lg:p-5">
+          <p class="text-gray-800 mb-5 bg-white rounded-xl text-left p-3 sm:text-lg sm:mb-3 sm:p-3 md:text-xl md:mb-7 md:p-4 lg:text-2xl lg:mb-9 lg:p-5">
             日本国内では少子高齢化が進行し、労働力不足が深刻な問題となっています。これに対する解決策の一つとして、外国人労働者の活用が注目されています。
           </p>
           <button class="border font-bold shadow-xl border-sky-400 text-black px-10 py-5 rounded-xl hover:bg-sky-400 hover:text-white sm:text-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
@@ -79,14 +79,14 @@
       <div class="container mx-auto pb-10">
         <h3 class="text-3xl font-bold text-center sm:text-5xl reveal">外国人技能実習制度とは</h3>
         <h3 class="text-3xl font-bold text-center sm:text-5xl sm:mt-5 reveal">What is Technical Intern Training Program?</h3>
-        <p class="text-xl m-5 p-5 bg-white text-gray-800 text-left rounded-xl lg:text-2xl">
+        <p class="text-lg sm:text-xl m-5 p-5 bg-white text-gray-800 text-left rounded-xl lg:text-2xl">
           技能実習制度とは、国際協力の一環として、開発途上国などの外国人に対して、日本で一定期間（最長5年間）にわたり、企業等でOJTを通じて技能を習得・移転する制度です。
         </p>
         <div class="p-5">
-          <table class="border table-auto text-xl mx-auto">
+          <table class="border table-auto text-sm sm:text-xl mx-auto">
             <thead>
               <tr class="border bg-blue-300">
-                <th class="border p-5 px-20 lg:px-30">在留資格</th>
+                <th class="border p-5 px-14 sm:px-30">在留資格</th>
                 <th class="border p-5 sm:px-30">技能実習 1号</th>
                 <th class="border p-5 sm:px-30">技能実習 2号</th>
                 <th class="border p-5 sm:px-30">技能実習 3号</th>
@@ -140,33 +140,33 @@
         </p>
         <div class="grid p-5 gap-8 lg:grid-cols-2">
           <!-- service 1 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start" >
-            <img src="pict/jimu daiko 100.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start" >
+            <img src="pict/jimu daiko 100.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">各種申請資料の事務代行</h4>
-                <ul class="text-gray-500 mb-5 list-disc px-5">
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">各種申請資料の事務代行</h4>
+                <ul class="text-gray-500 text-sm sm:text-base mb-5 list-disc px-5">
                   <li>在留資格申請・認定申請・資格変更申請･期間変更申請・実習計画認定申請等</li>
                   <li>各種申請手数料の代行納付</li>
                 </ul>
             </div>
           </div>
           <!-- service 2 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="pict/sougei.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/sougei.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">入国/帰国時の送迎及び航空券の手配</h4>
-                <ul class="text-gray-500 mb-5 list-disc px-5">
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">入国/帰国時の送迎及び航空券の手配</h4>
+                <ul class="text-gray-500 text-sm sm:text-base mb-5 list-disc px-5">
                   <li>入国/帰国時は最寄りの空港まで送迎サポート</li>
                   <li>入国/帰国時の航空券を手配します</li>
                 </ul>
             </div>
           </div>
           <!-- service 3 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="pict/nyukokukenshu.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/nyukokukenshu.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">入国後研修の実施(約1ヶ月)</h4>
-                <ul class="text-gray-500 mb-5 list-disc px-5">
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">入国後研修の実施(約1ヶ月)</h4>
+                <ul class="text-gray-500 text-sm sm:text-base mb-5 list-disc px-5">
                   <li>日本語教育(読解･聴解･会話など)および、専門用語等の教育</li>
                   <li>日本における生活習慣教育(挨拶･マナー･交通ルール･防災訓練等)</li>
                   <li>就業に係る教育(時間管理･報連相･5S等)</li>
@@ -174,29 +174,29 @@
             </div>
           </div>
           <!-- service 4 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="pict/shiyakusho 100.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/shiyakusho 100.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">各市町村への転入･転出の届出および国保加入等の支援</h4>
-                <ul class="text-gray-500 mb-5 list-disc px-5">
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">各市町村への転入･転出の届出および国保加入等の支援</h4>
+                <ul class="text-gray-500 text-sm sm:text-base mb-5 list-disc px-5">
                   <li>各役所窓口での手続き</li>
                 </ul>
             </div>
           </div>
           <!-- service 5 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="pict/ginko koza 100.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/ginko koza 100.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">銀行口座開設や送金手続き等の支援</h4>
-              <p class="text-gray-500 mb-5">実習生の銀行口座開設や、母国への送金手続き等をサポート</p>
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">銀行口座開設や送金手続き等の支援</h4>
+              <p class="text-gray-500 text-sm sm:text-base mb-5">実習生の銀行口座開設や、母国への送金手続き等をサポート</p>
             </div>
           </div>
           <!-- service 6 -->
-          <div class="border border-sky-400 flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="pict/mendan 100.png"/>
+          <div class="border border-sky-400 sm:flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="pict/mendan 100.png" class="p-5"/>
             <div>
-              <h4 class="text-2xl font-bold mb-5">定期的な訪問指導･面談ならびに通訳･翻訳</h4>
-              <ul class="text-gray-500 mb-5 list-disc px-5">
+              <h4 class="text-xl sm:text-2xl font-bold mb-5">定期的な訪問指導･面談ならびに通訳･翻訳</h4>
+              <ul class="text-gray-500 text-sm sm:text-base mb-5 list-disc px-5">
                 <li>実習生の生活、職場環境の確認等のため適宜巡回し訪問指導を実施</li>
                 <li>訪問指導は月1回を基本とし、必要時は適宜対応</li>
               </ul>
@@ -212,13 +212,13 @@
       <p class="text-gray-500 mb-5 text-center">弊社が対応している職種はこちら</p>
       <div class="container p-10 mx-auto">
         <!-- job 1 -->
-        <div class="shadow-xl">
-            <div class="flex justify-center">
-              <img src="pict/seibishi300.png" class="pr-5 rounded-xl"/>
-              <img src="pict/seibishi3 300.png" class="rounded-r-xl"/>
+        <div class="shadow-xl p-2">
+            <div class="flex justify-center flex-wrap max-w-full overflow-hidden">
+              <img src="pict/seibishi300.png" class="w-1/2 max-w-full h-auto pr-5 rounded-xl"/>
+              <img src="pict/seibishi3 300.png" class="w-1/2 max-w-full h-auto rounded-r-xl"/>
             </div>
             <div class="py-3 px-5">
-              <h4 class="text-center font-bold text-3xl mt-5 mb-5">整備士 (Automobile Mechanic)</h4>
+              <h4 class="text-base text-center font-bold sm:text-3xl mt-5 mb-5">整備士 (Automobile Mechanic)</h4>
             </div>
         </div>
       </div>
@@ -235,7 +235,7 @@
               <img src="pict/filippineflag.jpg" class="pr-5 rounded-xl"/>
             </div>
             <div class="py-3 px-5">
-              <h4 class="text-center font-bold text-3xl mt-5 mb-5">フィリピン</h4>
+              <h4 class="text-base text-center font-bold sm:text-3xl mt-5 mb-5">フィリピン</h4>
             </div>
         </div>
         <!-- country 2 -->
@@ -244,7 +244,7 @@
               <img src="pict/indonesiaflag.jpg" class="pr-5 rounded-xl"/>
             </div>
             <div class="py-3 px-5">
-              <h4 class="text-center font-bold text-3xl mt-5 mb-5">インドネシア</h4>
+              <h4 class="text-base text-center font-bold sm:text-3xl mt-5 mb-5">インドネシア</h4>
             </div>
         </div>
       </div>
@@ -279,7 +279,7 @@
         </button>
       </div>
       <div class="py-3 px-5">
-        <h4 class="text-center font-bold text-3xl mt-5 mb-5">Prudential Employment Agency, Inc & PT JIPA P3MI</h4>
+        <h4 class="text-base text-center font-bold sm:text-3xl mt-5 mb-5">Prudential Employment Agency, Inc & PT JIPA P3MI</h4>
       </div>
     </section>
     <!-- education institution  -->
@@ -316,7 +316,7 @@
         </button>
       </div>
       <div class="py-3 px-5">
-        <h4 class="text-center font-bold text-3xl mt-5 mb-5">Sakura Japanese Language School & LPK Momiji</h4>
+        <h4 class="text-base text-center font-bold sm:text-3xl mt-5 mb-5">Sakura Japanese Language School & LPK Momiji</h4>
       </div>
     </section>
      <!-- about -->
@@ -326,36 +326,36 @@
           <div class="p-5">
 					 <table class="mx-auto text-left mb-10 bg-white rounded-xl">
 						<tr>
-							<th class="pl-10 pt-10 p-3 w-80 lg:w-100 lg:text-4xl">名称</th>
-							<td class="pr-10 pt-10 p-3 lg:text-4xl">セントラル技能交流協同組合</td>
+							<th class="text-sm pl-5 sm:pl-10 pt-10 p-3 w-32 sm:w-80 lg:w-100 lg:text-4xl">名称</th>
+							<td class="text-sm pr-10 pt-10 p-3 lg:text-4xl">セントラル技能交流協同組合</td>
 						</tr>
 						<tr>
-							<th class="pl-10 p-3 lg:text-4xl">許可</th>
-							<td class="p-3 pr-10 lg:text-4xl">監理団体許可番号 許2406000009(特定監理事業)</td>
+							<th class="text-sm pl-5 sm:pl-10 p-3 lg:text-4xl">許可</th>
+							<td class="text-sm p-3 pr-10 lg:text-4xl">監理団体許可番号 許2406000009(特定監理事業)</td>
 						</tr>
 						<tr>
-							<th class="pl-10 p-3 lg:text-4xl"><b>本店</b><br>
+							<th class="text-sm pl-5 sm:pl-10 p-3 lg:text-4xl"><b>本店</b><br>
                   <b>監理事務所</b>
               </th>
-							<td class="p-3 lg:text-4xl">愛知県名古屋市中区金山1-14-9 長谷川ビル9F<br>
+							<td class="text-sm p-3 lg:text-4xl">愛知県名古屋市中区金山1-14-9 長谷川ビル9F<br>
                   岐阜県石切町３７　二葉工業所３階
               </td>
 						</tr>
 						<tr>
-							<th class="pl-10 p-3 lg:text-4xl">TEL/FAX</th>
-							<td class="p-3 lg:text-4xl font-bold text-red-600">058-273-5580 / 058-273-5585</td>
+							<th class="text-sm pl-5 sm:pl-10 p-3 lg:text-4xl">TEL/FAX</th>
+							<td class="text-sm p-3 lg:text-4xl font-bold text-red-600">058-273-5580 / 058-273-5585</td>
 						</tr>
 						<tr>
-							<th class="pl-10 p-3 lg:text-4xl">設立</th>
-							<td class="p-3 lg:text-4xl">令和2年1月</td>
+							<th class="text-sm pl-5 sm:pl-10 p-3 lg:text-4xl">設立</th>
+							<td class="text-sm p-3 lg:text-4xl">令和2年1月</td>
 						</tr>
 						<tr>
-							<th class="pl-10 p-3 lg:text-4xl">資本金</th>
-							<td class="p-3 lg:text-4xl">5,050,000円</td>
+							<th class="text-sm pl-5 sm:pl-10 p-3 lg:text-4xl">資本金</th>
+							<td class="text-sm p-3 lg:text-4xl">5,050,000円</td>
 						</tr>
 						<tr>
-							<th class="pl-10 pb-10 p-3 lg:text-4xl">代表理事</th>
-							<td class="pb-10 p-3 lg:text-4xl">岩村　彰憲</td>
+							<th class="text-sm pl-5 sm:pl-10 pb-10 p-3 lg:text-4xl">代表理事</th>
+							<td class="text-sm pb-10 p-3 lg:text-4xl">岩村　彰憲</td>
 						</tr>
 					 </table>
           </div>
@@ -366,9 +366,9 @@
         <h3 class="text-3xl font-bold sm:text-5xl">セントラル技能交流協同組合</h3>
         <h3 class="text-2xl font-bold sm:text-5xl sm:mt-5">Central Technical Skill Exchange Cooperative</h3>
         <p class="text-2xl m-5" ></p>
-        <p class="text-2xl m-5"><b>本店</b>：〒460-0022 愛知県名古屋市中区金山1-14-9　長谷川ビル9F</p>
-        <p class="text-2xl m-5"><b>監理事務所</b>：〒500-8437 岐阜県石切町３７　二葉工業所３階</p>
-        <P class="text-2xl m-5 font-bold text-red-500">TEL 058-273-5580 / FAX:058-273-5585</P>
+        <p class="text-sm sm:text-2xl m-5"><b>本店</b>：〒460-0022 愛知県名古屋市中区金山1-14-9　長谷川ビル9F</p>
+        <p class="text-sm sm:text-2xl m-5"><b>監理事務所</b>：〒500-8437 岐阜県石切町３７　二葉工業所３階</p>
+        <P class="text-sm sm:text-2xl m-5 font-bold text-red-500">TEL 058-273-5580 / FAX:058-273-5585</P>
       </div>
     </section>
     
